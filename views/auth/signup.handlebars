@@ -1,0 +1,33 @@
+<section class="container">
+    <article >
+        <div class="col-md-4 mx-auto card my-4">
+            <h3 class="text-uppercase font-weight-bold text-center my-2 p-1" ><u> Signup</u></h3>
+            <form action="/auth/signup" method="POST">
+                 <div class="form-group">
+                  <label for="name">Name</label><br>
+                  <input type="text" name="name" class="form-control" required id="name" placeholder="Enter Name">
+              </div>
+               <div class="form-group">
+                  <label for="phone">Phone</label><br>
+                  <input type="text" name="phone" class="form-control" required id="phone" placeholder="Enter PhoneNumber">
+              </div>
+              <div class="form-group">
+                  <label for="email">Email</label><br>
+                  <input type="email" name="email" class="form-control" required id="email" placeholder="Enter Email">
+              </div>
+
+                <div class="form-group">
+                  <label for="password">Password</label><br>
+                  <input type="Password" name="password" class="form-control" required id="password" placeholder="Enter password">
+              </div>
+               <div class="form-group">
+                  <label for="password2">ConformPassword</label><br>
+                  <input type="password" name="password2" class="form-control" required id="password2" placeholder="Enter password">
+              </div>
+              <div class="form-group">
+                  <button class="btn btn-primary btn-block">Signup</button>
+              </div>
+            </form>
+        </div>
+    </article>
+</section>

@@ -1,0 +1,24 @@
+{
+  "name": "Swiggy-Express",
+  "version": "1",
+  "description": "We are creating a swiggy app by using nodejs and expressjs",
+  "main": "server.js",
+  "script":{
+        "start":"server.js"
+  },
+  "author": "KeerthiNarayana",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^4.5.0",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "jquery": "^3.5.1",
+    "mongoose": "^5.9.15",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-session": "^1.0.2"
+  }
+}
