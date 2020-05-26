@@ -12,7 +12,7 @@ router.get("/signup",(req,res) => {
 
 router.get("/signin", (req,res) => {
     res.render("./auth/signin");
-})
+});
 
 /*---------------GET routes end----------------*/
 
@@ -29,7 +29,7 @@ router.post("/signup", (req,res) => {
       errors.push({text:"password should be minimum of 7 characters"});
     }
     if(errors.length > 0){
-        res.rednder("./auth/signup", {
+        res.render("./auth/signup", {
             name,
             phone,
             email, 
@@ -38,7 +38,7 @@ router.post("/signup", (req,res) => {
         });
     } 
     else {
-        User.findOne({phone})
+        User.findOne({email})
         .then((user) => {
             if(user){
                 res.redirect("/auth/signup",401, {});
@@ -72,8 +72,8 @@ router.post("/signup", (req,res) => {
 
 //signin
 router.post('/signin',(req,res,next) => {
-        passport.autenticate("local",{
-            successRedirect: "/abc/abc" ,
+        passport.authenticate("local",{
+            successRedirect: "/" ,
             failureRedirect : "/auth/signin",
             failureFlash: true,
         })(req,res,next);

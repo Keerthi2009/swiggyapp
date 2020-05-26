@@ -4,7 +4,8 @@ const exphbs = require("express-handlebars");
 const bodyParser = require("body-parser");
 require("dotenv").config();
 const passport = require("passport");
-const session = require("passport-session");
+const session = require("express-session");
+const flash = require("connect-flash");
 
 
 const app = express();
@@ -34,7 +35,17 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
 
+app.use(session({
+    secret: 'keyboard cat',
+    resave: true,
+    saveUninitialized: true,
+  }));
 
+require("./config/passport")(passport);
+
+app.use(flash());
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.get('/',(req,res)=> {
     res.render("home.handlebars");
