@@ -3,3 +3,290 @@ body{
     margin: 0;
     font-family: 'Merriweather', serif;
 }
+
+   
+    #headerBlock{
+        height: 600px;
+    }
+    .leftheaderBlock {
+        background: white;
+        width: 55%;
+        float: left;
+        clear: both;
+         
+    }
+    
+    .rightheaderBlock {
+        background: url('../image/order.jpg');
+        width: 45%;
+        float: left;
+        height: 600px;
+        float: right;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: 0;
+    
+    }
+    
+    .logo {
+        width: 30%;
+        float: left;
+        height: 70px;
+    }
+    
+    .menu {
+        float: right;
+        width: 70%;
+        text-align: right;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        line-height: 54px;
+    
+    }
+    
+    ul li {
+        display: inline-block;
+    
+    }
+    
+    #menuandlogo {
+        padding: 60px;
+    }
+    .logo svg {
+        fill: #fc8019;
+        width: 200px;
+    }
+    
+    .menu ul li a {
+        color:#000;
+        padding: 17px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .menu ul li a:hover {
+        color: #fc8019;
+    }
+    
+    .signup {
+        background: #111;
+        padding: 11px 30px;
+        color: white !important;
+        }
+    
+        #mainBlock , .footerlist {
+            padding: 20px 60px;
+        }
+        .headerTitle h1 {
+            font-weight: 600;
+            font-size: 40px;
+            text-transform: capitalize;
+            margin-bottom: 5px;
+        }
+    
+        .contentblockpara p{
+            font-size: 23px;
+            padding: 0;
+            margin-top: 0;
+            margin-bottom: 50px;
+        }
+    
+        .form-control {
+            width: 90%;
+            padding: 20px;
+            box-sizing: border-box;
+           
+        }
+        .form {
+            position: relative;
+    
+        }
+        .find {
+            position: absolute;
+            background: #fc8019;
+            color: white;
+            padding: 10px;
+            border: none;
+            right: 0;
+            top: 0;
+            height: 59px;
+            width: 120px;
+            font-size: 18px;
+            font-weight: bold;
+            
+    
+    
+        }
+        .locateme{
+            position: absolute;
+            right: 130px;
+            top: 10px;
+            padding: 10px 20px;
+            text-transform: capitalize;
+    
+    
+        }
+         
+        .locateme:hover{
+            background: #eee;
+            cursor: pointer;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        .footerlist ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+    
+        }
+        .footerlist ul li {
+            display: inline-block;
+    
+        }
+        .footerlist ul li a {
+            text-decoration: none;
+        }
+        .footerlist h3{
+            color: #999;
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+        .footerlist ul li:nth-child(even) a {
+            color: #777;
+        }
+    
+        .footerlist ul li:nth-child(odd) a{
+            color:#000;
+        }
+        
+        #middlesection {
+            background-color:#2b1e16;
+            padding: 0 20px;
+            height: 400px;
+            clear: both;
+    
+            
+        }
+        
+        figure {
+            margin: 0;
+            padding: 0;
+        }
+    
+        .leftarea {
+            width: 30%;
+            float: left;
+        }
+        .middlearea{ 
+            width: 30%;
+            float: left;
+    
+        }
+        .rightarea {
+            width: 30%;
+            float: left;
+    
+        }
+        .contentarea{
+            text-align: center;
+            padding:10px 20px;
+            color: #fff;
+    
+        }
+        .contentarea img{
+            width: 105px;
+            height: 199px;
+        }
+        .contentarea h1{
+            font-size: 18px;
+        
+    
+        }
+        .contentarea p{
+            font-size: 14px;
+        }
+    
+        #Restaurants {
+            clear: both;
+        }
+    
+        .Restaurants_left {
+            width: 45%;
+             
+            float: left;
+        }
+    
+        .Restaurants_right {
+            width: 55%;
+            float: left;
+    
+        }
+    
+        .Restaurants_left section{
+            padding: 110px 80px;
+        }
+    
+        .Restaurants_left section h1{
+            font-size: 36px;
+            font-weight: 600;
+            padding: 0;
+            width: 60%;
+            
+        }
+    
+        .Restaurants_left section p{
+            font-size: 18px;
+            color: #999;
+            padding: 0px 0px 40px 0px;
+            margin: 0;
+    
+    
+        }
+        .Restaurants_left section figure{
+            margin: 0;
+            display: inline-block;
+        }
+    
+        .Restaurants_left section figure img{
+    
+            width: 180px;
+    
+        }
+        .Restaurants_right figure img{
+            width: 400px;
+        }
+        .Restaurants_right figure{
+            float: left;
+            width: 46%;
+        }
+        .Restaurants_right figure:nth-child(2){
+            padding-top: 75px;
+        }
+
+        /* menu css */
+        .menu-body{
+            background: darkslategray;
+        
+        }
+        
+        .col-sm-4{
+            margin-bottom: 50px;
+        }
+        
+        .menu-img{
+            width: 344px;
+            height: 200px ;
+        }
+        
+        .card-title{
+            color: blue;
+        }
+        .card{
+            padding: 2px;
+            background-color: rgb(11, 221, 155);
+        }
+        .btn{
+            width: 100%;
+        }
