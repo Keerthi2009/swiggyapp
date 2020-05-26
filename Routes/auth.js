@@ -14,6 +14,8 @@ router.get("/signin", (req,res) => {
     res.render("./auth/signin");
 });
 
+
+
 /*---------------GET routes end----------------*/
 
 
@@ -73,7 +75,7 @@ router.post("/signup", (req,res) => {
 //signin
 router.post('/signin',(req,res,next) => {
         passport.authenticate("local",{
-            successRedirect: "/" ,
+            successRedirect: "/swiggy/restaurants" ,
             failureRedirect : "/auth/signin",
             failureFlash: true,
         })(req,res,next);

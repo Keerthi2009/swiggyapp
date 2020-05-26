@@ -11,6 +11,7 @@ const flash = require("connect-flash");
 const app = express();
 
 const auth = require("./Routes/auth");
+const swiggy = require("./Routes/swiggy");
 
 
 mongoose.connect(process.env.MONGODB_URL,
@@ -52,6 +53,8 @@ app.get('/',(req,res)=> {
 });
 
 app.use('/auth',auth);
+
+app.use("/swiggy",swiggy);
 
 app.get("**", (req,res) => {
     res.render("pagenotfound.handlebars");
