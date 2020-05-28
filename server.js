@@ -6,7 +6,7 @@ require("dotenv").config();
 const passport = require("passport");
 const session = require("express-session");
 const flash = require("connect-flash");
-
+const handlebars = require("handlebars");
 
 const app = express();
 
@@ -18,6 +18,7 @@ mongoose.connect(process.env.MONGODB_URL,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
+        useCreateIndex: true,
 
     },
     (err)=>{
@@ -47,6 +48,14 @@ require("./config/passport")(passport);
 app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
+
+//gloable variables
+app.use(function(req,res,next) {
+    res.locals.success_msg = req.flash('success_msg');
+    res.locals.errors_msg = req.flash('errors_msg');
+    res.locals.error = req.flash("error");
+    next();
+  });
 
 app.get('/',(req,res)=> {
     res.render("home.handlebars");

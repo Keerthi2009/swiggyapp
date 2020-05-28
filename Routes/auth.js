@@ -43,6 +43,7 @@ router.post("/signup", (req,res) => {
         User.findOne({email})
         .then((user) => {
             if(user){
+                req.flash("errors_msg", "This email already exists");
                 res.redirect("/auth/signup",401, {});
             }
             else{
@@ -60,6 +61,7 @@ router.post("/signup", (req,res) => {
                           
                        //save in DB
                        newUser.save().then((user) => {
+                           req.flash("success_msg", "successfully signed up");
                            res.redirect("/auth/signin",201,{});
                        }
                        )
@@ -83,7 +85,11 @@ router.post('/signin',(req,res,next) => {
 
 /*---------------POST routes end----------------*/
 
-
+//logout
+router.get("/signout", (req,res) => {
+    req.flash("success_msg", "Successfully signed out");
+    res.redirect("/auth/signin");
+})
 
 
 module.exports = router;

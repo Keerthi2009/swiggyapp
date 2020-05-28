@@ -284,9 +284,39 @@ body{
             color: blue;
         }
         .card{
+         
             padding: 2px;
-            background-color: rgb(11, 221, 155);
+            opacity: 2;
         }
         .btn{
             width: 100%;
         }
+
+        /* restaurants */
+        .restaurants .card img{
+            width: 20%;
+            height: 150px;
+        }
+/* msg handlebars */
+.alert .alert-success{
+    background:#72c17c;
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    width: auto;
+    border-left: 10px solid green;
+    border-radius: 0;
+    border-right: 0;
+    color: white;
+}
+.alert .alert-danger{
+    background:#fd5f69;
+ display: inline-block;
+ position: fixed;
+ right: 0;
+ width: auto;
+ border-left: 10px solid #fa2432;
+ border-radius: 0;
+ border-right: 0;
+ color: white;
+}

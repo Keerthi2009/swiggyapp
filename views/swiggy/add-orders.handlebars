@@ -1,0 +1,35 @@
+<section class="container">
+    <article>
+        <div class="row">
+            <div class="col-md-4 mx-auto  my-4">
+            <h1 class="text-uppercase font-weight-bold text-center">Add orders</h1>
+            <hr>
+        <form action="/swiggy/add-order" method="POST">
+            <div class="form-group">
+              <label for="restaraunt_name">Restaraunt Name</label>
+              <input type="text" class="form-control" 
+              name="restaraunt_name" required placeholder="restaraunt_name">
+            </div>
+             <div class="form-group">
+              <label for="restaraunt_photo">Restaraunt photo</label>
+              <input type="file" class="form-control" 
+              name="restaraunt_photo" required placeholder="restaraunt_photo">
+            </div>
+             <div class="form-group">
+              <label for="restaraunt_dish1">Restaraunt dish1</label>
+              <input type="text" class="form-control" 
+              name="restaraunt_dish1" required placeholder="restaraunt_dish1">
+            </div>
+             <div class="form-group">
+              <label for="restaraunt_dish2">Restaraunt dish2</label>
+              <input type="text" class="form-control" 
+              name="restaraunt_dish2" required placeholder="restaraunt_dish2">
+            </div>
+            <div>
+                <button class="btn btn-warning">Add Orders</button>
+            </div>
+        </form>
+        </div>
+        </div>
+    </article>
+</section>
